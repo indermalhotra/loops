@@ -56,6 +56,7 @@ console.log(Object.keys(restaurant.openingHours));
 console.log(Object.values(restaurant.openingHours));
 console.log(Object.entries(restaurant.openingHours));
 
+
 // use of for loop of
 
 const schools = [
@@ -109,7 +110,7 @@ const italianFoods = new Set([
 
   // to remove the element i.e common
   const italianOnly = italianFoods.difference(mexicanFoods);
-  console.log(italianOnly)
+  console.log(italianOnly);
 
-
-
+  // to get full unique set set1 did not have anything of set2
+  console.log(italianFoods.isDisjointFrom(mexicanFoods));
